@@ -1,0 +1,23 @@
+{
+  "name": "mapsmdfe",
+  "version": "1.0.0",
+  "description": "maps.md frontend",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MapsMD/fe_v1.git"
+  },
+  "author": "Anatolie Golovco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MapsMD/fe_v1/issues"
+  },
+  "homepage": "https://github.com/MapsMD/fe_v1#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {}
+}
