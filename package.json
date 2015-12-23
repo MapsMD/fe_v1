@@ -2,9 +2,13 @@
   "name": "mapsmdfe",
   "version": "1.0.0",
   "description": "maps.md frontend",
-  "main": "index.html",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "beefy main.js:bundle.min.js --live",
+    "bundle": "browserify main.js -o bundle.min.js",
+    "build:html": "jade -P < assets/html/index.jade > dist/index.html",
+    "build:css": "copy < assets/css/main.css > dist/main.css",
+    "build": "npm run build:css && npm run build:html"
   },
   "repository": {
     "type": "git",
@@ -17,7 +21,15 @@
   },
   "homepage": "https://github.com/MapsMD/fe_v1#readme",
   "dependencies": {
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.1.4",
+    "leaflet": "^0.7.7",
+    "material-design-lite": "^1.0.6"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "beefy": "^2.1.5",
+    "browserify": "^12.0.1",
+    "copy-cli": "^1.2.1",
+    "jade": "^1.11.0"
+  }
 }

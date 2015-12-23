@@ -1,0 +1,45 @@
+html, body{ 
+	margin:0; 
+	padding:0; 
+	width:100%; 
+	height:100%; 
+	overflow: hidden;
+}
+
+
+/* Sub nav layer*/
+#subnav{
+	width: 100%; 
+	height: 30px; 
+	background: #2D2D2D; 
+	color: #CCCCCC; 
+	padding:0;
+	padding-left: 50px;
+	padding-top:5px;
+	padding-left: 10px;
+}
+
+#subnav a{
+	padding: 5px;
+}
+
+#subnav a:link{ 
+ 	color:	#BBBBBB; 
+ 	text-decoration:	none; 
+ }
+
+#subnav a:visited{ 
+ 	color:	#BBBBBB; 
+ 	text-decoration:	none; 
+ }
+
+#subnav a:hover{ 
+ 	color:	#FFFFFF; 
+ 	text-decoration:	none; 
+ }
+
+#subnav a:active{ 
+ 	color:	#BBBBBB; 
+ 	text-decoration:	none; 
+ }
+/* ENDOF Sub nav layer*/
