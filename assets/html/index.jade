@@ -3,10 +3,13 @@ html(lang="ro")
   head
     title= "Maps MD"
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
-    link(rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet",href="../node_modules/bootstrap/dist/css/bootstrap.min.css")
+    link(rel="stylesheet",href="../node_modules/leaflet/dist/leaflet.css")
     link(rel='stylesheet', href='main.css')
     script(src="../node_modules/jquery/dist/jquery.min.js")
     script(src="../node_modules/bootstrap/dist/js/bootstrap.min.js")
+    script(src="../node_modules/leaflet/dist/leaflet.js")
+    script(src="../main.js")
   body
     #navbar
       i(id="menu-toggle").fa.fa-bars
@@ -19,10 +22,6 @@ html(lang="ro")
     #wrapper
       #sidebar-wrapper
       #page-content-wrapper
-        #container-fluid
-    script(type='text/javascript').
-      $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-      });
+        #map
+      
 

@@ -4,23 +4,20 @@
     <title>Maps MD</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css">
     <link rel="stylesheet" href="main.css">
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/leaflet/dist/leaflet.js"></script>
+    <script src="../main.js"></script>
   </head>
   <body>
     <div id="navbar"><i id="menu-toggle" class="fa fa-bars"></i><a href="http://plus.google.com/b/113535330064210166862/113535330064210166862/posts" target="_blank"><i class="fa fa-google-plus pull-right"></i></a><a href="http://www.facebook.com/hartamd" target="_blank"><i class="fa fa-facebook-official pull-right"></i></a><a href="http://twitter.com/hartamd" target="_blank"><i class="fa fa-twitter pull-right"></i></a></div>
     <div id="wrapper">
       <div id="sidebar-wrapper"></div>
       <div id="page-content-wrapper">
-        <div id="container-fluid"></div>
+        <div id="map"></div>
       </div>
     </div>
-    <script type="text/javascript">
-      $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-      });
-    </script>
   </body>
 </html>

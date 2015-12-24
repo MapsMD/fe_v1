@@ -1,3 +1,10 @@
+html, body,#map{ 
+	margin:0; 
+	padding:0; 
+	width:100%; 
+	height:100%; 
+	overflow: hidden;
+}
 
 #navbar {
     width: 100%; 
@@ -12,7 +19,7 @@
 /* Sub nav layer*/
 #navbar {
 	padding-top:5px;
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 #navbar a{
@@ -40,11 +47,11 @@
  }
 /* ENDOF Sub nav layer*/
 
-
-
 #wrapper {
     padding-left: 0;
-    top:30px;
+    top:31px;
+    bottom:0px;
+    height:100%;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -76,8 +83,13 @@
 
 #page-content-wrapper {
     width: 100%;
-    position: absolute;
-    padding: 15px;
+    height: 100%;
+    top:0px; 
+	bottom:0px;
+}
+
+#page-content-wrapper > div { 
+	position:absolute !important; 
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -151,7 +163,7 @@
     }
 
     #page-content-wrapper {
-        padding: 20px;
+        padding: 0px;
         position: relative;
     }
 
@@ -160,3 +172,4 @@
         margin-right: 0;
     }
 }
+
