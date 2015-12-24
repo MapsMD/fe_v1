@@ -3,22 +3,24 @@
   <head>
     <title>Maps MD</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div id="subnav"><a href="http://plus.google.com/b/113535330064210166862/113535330064210166862/posts" target="_blank"><i class="fa fa-google-plus"></i></a><a href="http://www.facebook.com/hartamd" target="_blank"><i class="fa fa-facebook-official"></i></a><a href="http://twitter.com/hartamd" target="_blank"><i class="fa fa-twitter"></i></a></div>
+    <div id="navbar"><i id="menu-toggle" class="fa fa-bars"></i><a href="http://plus.google.com/b/113535330064210166862/113535330064210166862/posts" target="_blank"><i class="fa fa-google-plus pull-right"></i></a><a href="http://www.facebook.com/hartamd" target="_blank"><i class="fa fa-facebook-official pull-right"></i></a><a href="http://twitter.com/hartamd" target="_blank"><i class="fa fa-twitter pull-right"></i></a></div>
     <div id="wrapper">
       <div id="sidebar-wrapper"></div>
-    </div>
-    <div id="page-content-wrapper">
-      <div id="container-fluid">
-        <div id="row">
-          <div id="col-lg-12"><a href="#menu-toggle" id="menu-toggle" class="btn btn-default">menu</a></div>
-        </div>
+      <div id="page-content-wrapper">
+        <div id="container-fluid"></div>
       </div>
     </div>
+    <script type="text/javascript">
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
   </body>
 </html>

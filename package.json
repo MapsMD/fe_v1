@@ -23,8 +23,7 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "jquery": "^2.1.4",
-    "leaflet": "^0.7.7",
-    "material-design-lite": "^1.0.6"
+    "leaflet": "^0.7.7"
   },
   "devDependencies": {
     "beefy": "^2.1.5",
