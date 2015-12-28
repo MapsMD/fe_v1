@@ -2,6 +2,8 @@ var map;
 
 $(document).ready( function init(){
 
+	    var toggled = 0;
+
 	    L.Icon.Default.imagePath = 'node_modules/leaflet/dist/images/';
 		
 		map = L.map('map').setView([47.01772, 28.87207], 8);
@@ -34,13 +36,24 @@ $(document).ready( function init(){
 
 
         $(window).on("resize", function() {
-          $("#map").height($(window).height()-30).width($(window).width());
+          $("#map").height($(window).height()-30).width($(window).width()-250);
           map.invalidateSize();
         }).trigger("resize");
 
         $("#menu-toggle").click(function(e) {
           e.preventDefault();
           $("#wrapper").toggleClass("toggled");
+
+          if (toggled) {
+          	$("#map").height($(window).height()-30).width($(window).width()-250);
+            map.invalidateSize();
+            toggled = 0;
+          } else {
+          	$("#map").height($(window).height()-30).width($(window).width());
+            map.invalidateSize();
+            toggled = 1;
+          }
+
         });
 
 	})
